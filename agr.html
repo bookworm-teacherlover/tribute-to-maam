@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Agriti Ma'am</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5e1da; /* Aesthetic peach color */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            color: #8b5a44; /* Aesthetic brown color */
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+        p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.1em;
+            animation: fadeInUp 1s ease-out;
+        }
+        .quote {
+            font-style: italic;
+            color: #d3a297; /* Aesthetic dusty rose color */
+            margin: 20px 0;
+            font-size: 1.2em;
+            animation: zoomIn 1.5s ease-out;
+        }
+        .interactive-button, .reveal-button {
+            background-color: #f7c6b3; /* Aesthetic light coral color */
+            color: #8b5a44; /* Aesthetic brown color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 1.1em;
+            margin: 20px auto;
+            display: block;
+            width: fit-content;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: bounceIn 1s ease-out;
+        }
+        .interactive-button:hover, .reveal-button:hover {
+            background-color: #e89e7a; /* Aesthetic darker coral color on hover */
+            transform: translateY(-3px);
+        }
+        .hidden-message {
+            display: none;
+            font-size: 1.2em;
+            color: #8b5a44; /* Aesthetic brown color */
+            margin-top: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            animation: fadeInUp 1s ease-out;
+        }
+        .image-container img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 45%;
+            height: auto;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+        /* Flower Petal Animation */
+        .flower-petal {
+            position: fixed;
+            top: -50px;
+            background-image: url('https://i.imgur.com/Zz5tRZW.png'); /* Flower petal image URL */
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            animation: fall linear infinite;
+            opacity: 0.8;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(110vh);
+                opacity: 0;
+            }
+        }
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes bounceIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        /* Heart Animation */
+       .heart {
+            width: 50px; /* Adjust width if needed */
+            height: 50px; /* Adjust height if needed */
+            position: absolute;
+            background-image: url('https://th.bing.com/th/id/OIP.75j5EVLLH1qUTJBdlr9llwHaNI?w=182&h=323&c=7&r=0&o=5&pid=1.7');
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: fall 7s linear infinite, drift 2s ease-in-out infinite;
+        }
+            opacity: 0.8;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(110vh);
+                opacity: 0;
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Tribute to Agriti Ma'am</h1>
+        <p>Dear Agriti Ma'am,</p>
+        <p>You are not just a teacher, but also a friend and a mentor to us. Your enthusiasm and joy in teaching motivate and inspire us. We appreciate your ability to explain lessons effectively and encourage us to apply them in real-life situations. Your patience and support make learning a positive experience, and your insights enrich our understanding.</p>
+        <p>Ma'am, your classroom is a haven of curiosity, where each lesson unfolds like a captivating story. Your teaching transcends textbooks; it's an art form that weaves knowledge into our hearts. We've learned not only facts and figures but also empathy, resilience, and the power of questioning.</p>
+        <p class="quote">"Education is not the filling of a pail, but the lighting of a fire." – W.B. Yeats</p>
+        <p>Your favorite color, Violet/Lavender, mirrors your nurturing spirit. Just as these hues blend seamlessly, you seamlessly blend discipline with compassion. When we stumble, you're there to lift us up, reminding us that mistakes are stepping stones to growth.</p>
+       
+        <p> The 📚 clip art represents the countless stories you've shared, sparking our imaginations.</p>
+        <p>Ma'am, you are the best teacher because you ignite our curiosity and love for learning. Happy Teachers' Day!</p>
+        
+        <div class="image-container">
+            <img src="C:\Users\Amit\Downloads\IMG-20240829-WA0000.jpg" alt="Teacher reading a book">
+            <img src="C:\Users\Amit\Downloads\IMG-20240829-WA0001.jpg" alt="Teacher on stairs">
+        </div>
+        
+        <button class="interactive-button" onclick="sendFlower()">Send Ma'am a Virtual Flower 🌸</button>
+        <p class="hidden-message" id="hiddenMessage">Thank you for everything you do, Ma'am! 🌸</p>
+        <button class="reveal-button" onclick="revealMessage()">Reveal a Special Message</button>
+    </div>
+
+    <!-- Flower Petal Animation -->
+    <script>
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.className = 'flower-petal';
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = Math.random() * 3 + 2 + 's';
+            document.body.appendChild(petal);
+            setTimeout(() => {
+                petal.remove();
+            }, 5000);
+        }
+        function sendFlower() {
+            for (let i = 0; i < 20; i++) {
+                setTimeout(createPetal, i * 100);
+            }
+        }
+        function revealMessage() {
+            var message = document.getElementById("hiddenMessage");
+            if (message.style.display === "none") {
+                message.style.display = "block";
+            } else {
+                message.style.display = "none";
+            }
+        }
+        // Start creating petals when the page loads
+        setInterval(createPetal, 500);
+    </script>
+</body>
+</html>
